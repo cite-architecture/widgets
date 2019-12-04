@@ -1,0 +1,37 @@
+html {
+	margin: 4em;
+	font: 24px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	line-height: 1.3em;
+}
+
+span.ctsUrn {
+	display: none;
+}
+
+.ohco2_commentBlock {
+	margin: 0.5em;
+}
+
+.ohco2_commentBlock .ohco2_citableNodeContainer	{
+	margin: 0.5em;
+	border: 1px dashed silver;
+}
+
+.ohco2_citableNodeContainer {
+	display: block;
+	padding: 0.5em;
+}
+
+.ohco2_citableNodeContainer::after {
+	content: attr(data-urnPassage);
+	color: blue;
+	opacity: .5;
+	font-size: 85%;
+	margin-left: 1em;
+}
+
+.ohco2_citableNodeContainer:hover::after {
+	content: attr(data-ctsurn);
+	color: blue;
+	margin-left: 1em;
+}
