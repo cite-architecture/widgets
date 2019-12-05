@@ -1,37 +1,56 @@
-html {
-	margin: 4em;
-	font: 24px 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	line-height: 1.3em;
+
+div.ohco2_commentedPassage {
+	display: flex;
+	flex-direction: row ;
+	flex-wrap: wrap ;
+	align-items: center;
+	justify-content: flex-start
 }
 
-span.ctsUrn {
+div.ohco2_commentBlock_hidden > * {
 	display: none;
+	clear: both;
 }
 
-.ohco2_commentBlock {
-	margin: 0.5em;
-}
-
-.ohco2_commentBlock .ohco2_citableNodeContainer	{
-	margin: 0.5em;
-	border: 1px dashed silver;
-}
-
-.ohco2_citableNodeContainer {
-	display: block;
-	padding: 0.5em;
-}
-
-.ohco2_citableNodeContainer::after {
-	content: attr(data-urnPassage);
-	color: blue;
-	opacity: .5;
+div.ohco2_commentBlock_hidden::after {
+	content: attr(data-commentBlockLabel);
 	font-size: 85%;
-	margin-left: 1em;
+	border: 1px solid black;
+	border-radius: 7px;
+	margin: 0 0 0 1em;
+	padding: 3px;
+	display: inline-block;
+	order: 4;
 }
 
-.ohco2_citableNodeContainer:hover::after {
-	content: attr(data-ctsurn);
-	color: blue;
-	margin-left: 1em;
+div.ohco2_commentBlock_hidden:hover::after {
+	background-color: #eee;
 }
+
+div.ohco2_commentBlock.ohco2_commentBlock_visible {
+	display: block;
+	flex-basis: 100%;
+	padding: 1em 0 0 0;
+}
+
+.ohco2_commentBlock_visible > span.ohco2_commentBlock_close {
+	  float: left;
+		margin-top: -5px;
+		margin-right: 10;
+		cursor: pointer;
+		color: black;
+		border: 1px solid #69626b;
+		border-radius: 40px;
+		background: rgba(0, 0, 0, 0.10);
+		font-size: 18px;
+		font-weight: bold;
+		display: inline-block;
+		line-height: 4px;
+		padding: 11px 8px;
+}
+
+.ohco2_commentBlock_visible > span.ohco2_commentBlock_close:hover {
+	background: rgba(0, 0, 0, 0.33);
+	color: white;
+}
+
