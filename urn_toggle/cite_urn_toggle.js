@@ -10,7 +10,7 @@ $(document).ready(function () {
 	$(".ctsurn").html("cts-urn");
 
 
-	$(".ctsurn").click(function(){ 
+	$(".ctsurn").dblclick(function(){ 
 		var urnString = $(this).attr("data-ctsurn");
 		if ( $(this).hasClass("ctsUrn0") ) {
 			// passage (ctsUrn1)
