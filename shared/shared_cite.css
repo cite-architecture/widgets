@@ -16,3 +16,8 @@ html {
 	display: block;
 	padding: 0.5em;
 }
+
+.cite_urn {
+	color: navy;
+	font-family: "Lucida Sans Typewriter", Monaco, Monospace;
+}
