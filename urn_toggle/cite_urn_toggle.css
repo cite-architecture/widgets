@@ -1,0 +1,14 @@
+
+
+.cite_urn {
+	color: navy;
+	font-family: "Lucida Sans Typewriter", Monaco, Monospace;
+	font-size: 85%;
+	margin: 0 1em 0 1em;
+	padding: 2px;
+}
+
+
+.cite_urn:hover {
+	background-color: #ddd;
+}
