@@ -3,7 +3,7 @@
 <head>
 	<title>Text & Commentary</title>
 	<link rel="stylesheet" href="cite_text_commentary.css">
-	<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="../shared/jquery-3.4.1.min.js"></script>
 </head>
 
 <body>
@@ -13,11 +13,19 @@
 		<p>Μῆνιν ἄειδε θεὰ Πηληϊάδεω	Ἀχιλῆος</p>
 		
 		<div class="ohco2_commentBlock" data-commentBlockLabel="smart-comment">
-			<p>This is the first line of the Iliad.</p>
+			<p>Comment 1: This is a comment.</p>
+			<p>Comment 2: This is a second comment.</p>
 		</div>
 
 		<div class="ohco2_commentBlock" data-commentBlockLabel="dumb-comment">
-			<p>It was written by George Homer.</p>
+			<div class="comment">
+				<p>Comment 1: Any elements can go inside an `ohco2_commentBlock`.</p>
+				<p>So you can group complext objects, like this 2-paragraph comment.</p>
+			</div>
+			<div class="comment">
+				<p>Comment 2: Here is a second comment in group "dumb-comment".</p>
+			</div>
+
 		</div>	
 		
 	</div>
