@@ -16,18 +16,55 @@ The URN-Toggle widget offers the best of all possible worlds, by allowing CTS- a
 - "`1.1`" or "`12r`": The passage-component only (for CTS-URNs), or the object-selector only (for CITE2-URNs).
 - The full URN.
 
+This widget takes advantage of the [`xcite` library](https://github.com/cite-architecture/xcite), a Scala/ScalaJS library for creating and manipulating CTS- and CITE2-URNs.
+
 ## Requirements
 
-TBD.
+Javascript and CSS:
+
+~~~html
+<link rel="stylesheet" href="cite_urn_toggle.css">
+<script type="text/javascript" src="../shared/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../shared/xcite-opt.js"></script>
+<script type="text/javascript" src="cite_urn_toggle.js"></script>
+~~~
 
 ## Assumptions
 
-TBD.
+That CTS-URNs will be wrapped like this:
+
+~~~html
+<span class="cite_urn ctsUrn" data-ctsurn="urn:cts:greekLit:tlg0012.tlg001.msA:1.1">urn:cts:greekLit:tlg0012.tlg001.msA:1.1</span>
+~~~
+
+That Cite2-URNs will be wrapped like this:
+
+~~~html
+<span class="cite_urn cite2Urn" data-cite2urn="urn:cite2:hmt:msA.v1:12r">urn:cite2:hmt:msA.v1:12r</span>
+~~~
 
 ## Minimal Example
 
-TDB.
+~~~html
+<html>
+
+	<head>
+		<meta charset="utf-8"/>
+		<title>URN Toggle</title>
+		<link rel="stylesheet" href="cite_urn_toggle.css">
+		<script type="text/javascript" src="../shared/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="../shared/xcite-opt.js"></script>
+	</head>
+
+	<body>
+
+		<p>Μῆνιν ἄειδε θεὰ Πηληϊάδεω	Ἀχιλῆος <span class="cite_urn ctsUrn" data-ctsurn="urn:cts:greekLit:tlg0012.tlg001.msA:1.1">urn:cts:greekLit:tlg0012.tlg001.msA:1.1</span></p>
+
+	</body>
+</html>
 
 ## Fuller Examples
 
-TBD.
+The files `simple-test.html` and `test.html` are working examples. The former very simple, and the latter with output from [the `citewriter` library](https://github.com/cite-architecture/citewriter).
+
+The file `test.html` includes a reference to `../shared/shared_cite.css`, which is *not* necessary for this widget, but which provides a somewhat more attractive layout.
