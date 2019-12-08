@@ -30,8 +30,7 @@
     text-align: center;
     top:-20px;
     left:50%;
-    transform:translate(-50%, -80%);
-    padding: 0 5px;
+    transform:translate(-50%, -60%);
     color:#FFFFFF;
     background-color:#0085c8;
     font-weight:normal;
@@ -46,6 +45,12 @@
 
 .tooltip:hover .top {
     display:block;
+}
+
+.tooltip .top p {
+    margin: 6px;
+    line-height: 1em;
+    padding: 0;
 }
 
 .tooltip .top i {
