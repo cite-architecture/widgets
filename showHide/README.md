@@ -38,7 +38,7 @@ Javascript and CSS:
 
 	<body>
 
-		<div class="cite_showhide_header cite_showhide_closed">image</div>
+		<div class="cite_showhide_header cite_showhide_closed">text</div>
 		<p>Μῆνιν ἄειδε θεὰ Πηληϊάδεω	Ἀχιλῆος <span class="cite_urn ctsUrn" data-ctsurn="urn:cts:greekLit:tlg0012.tlg001.msA:1.1">urn:cts:greekLit:tlg0012.tlg001.msA:1.1</span></p>
 
 	</body>
