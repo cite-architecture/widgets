@@ -60,7 +60,7 @@ $(document).ready(function () {
 			// just "urn" (ctsUrn0)
 			$(this).removeClass("ctsUrn3");
 			$(this).addClass("ctsUrn0");
-			$(this).html("cts-urn");
+			$(this).html("cts");
 		}
 
 	});
@@ -94,7 +94,7 @@ $(".cite2urn").dblclick(function(){
 			// just "urn" (cite2Urn0)
 			$(this).removeClass("cite2Urn3");
 			$(this).addClass("cite2Urn0");
-			$(this).html("cite2-urn");
+			$(this).html("cite2");
 		}
 
 	});
