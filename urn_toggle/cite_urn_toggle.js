@@ -7,13 +7,13 @@ $(document).ready(function () {
 	$(".ctsurn").removeClass("ctsUrn2");
 	$(".ctsurn").removeClass("ctsUrn3");
 	$(".ctsurn").addClass("ctsUrn0");
-	$(".ctsurn").html("cts-urn");
+	$(".ctsurn").html("cts");
 	$(".cite2urn").removeClass("cite2Urn0");
 	$(".cite2urn").removeClass("cite2Urn1");
 	$(".cite2urn").removeClass("cite2Urn2");
 	$(".cite2urn").removeClass("cite2Urn3");
 	$(".cite2urn").addClass("cite2Urn0");
-	$(".cite2urn").html("cite2-urn");
+	$(".cite2urn").html("cite2");
 
 	// Add a tooltip to each URN object
 	$(".ctsurn").wrap("<div class='tooltip'></div>");
